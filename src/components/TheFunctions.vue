@@ -3,6 +3,7 @@ import FunctionItem from "./FunctionItem.vue";
 import UseTitle from "./functions/UseTitle.vue";
 import UseClipboard from "./functions/UseClipboard.vue";
 import UseDark from "./functions/UseDark.vue";
+import UseColorMode from "./functions/UseColorMode.vue";
 </script>
 
 <template>
@@ -15,7 +16,6 @@ import UseDark from "./functions/UseDark.vue";
 
     <UseTitle />
   </FunctionItem>
-
   <FunctionItem>
     <template #heading>
       <a
@@ -40,5 +40,17 @@ import UseDark from "./functions/UseDark.vue";
     </template>
 
     <UseDark />
+  </FunctionItem>
+  <FunctionItem>
+    <template #heading>
+      <a
+        href="https://vueuse.org/core/usecolormode/#usecolormode"
+        target="_blank"
+      >
+        useColorMode
+      </a>
+    </template>
+
+    <UseColorMode />
   </FunctionItem>
 </template>
