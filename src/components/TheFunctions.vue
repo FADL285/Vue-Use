@@ -4,6 +4,7 @@ import UseTitle from "./functions/UseTitle.vue";
 import UseClipboard from "./functions/UseClipboard.vue";
 import UseDark from "./functions/UseDark.vue";
 import UseColorMode from "./functions/UseColorMode.vue";
+import OnKeyStroke from "./functions/OnKeyStroke.vue";
 </script>
 
 <template>
@@ -52,5 +53,17 @@ import UseColorMode from "./functions/UseColorMode.vue";
     </template>
 
     <UseColorMode />
+  </FunctionItem>
+  <FunctionItem>
+    <template #heading>
+      <a
+        href="https://vueuse.org/core/onkeystroke/#onkeystroke"
+        target="_blank"
+      >
+        onKeyStroke
+      </a>
+    </template>
+
+    <OnKeyStroke />
   </FunctionItem>
 </template>
