@@ -1,6 +1,7 @@
 <script setup>
 import FunctionItem from "./FunctionItem.vue";
 import UseTitle from "./functions/UseTitle.vue";
+import UseClipboard from "./functions/UseClipboard.vue";
 </script>
 
 <template>
@@ -15,9 +16,16 @@ import UseTitle from "./functions/UseTitle.vue";
   </FunctionItem>
 
   <FunctionItem>
-    <template #heading>Tooling</template>
+    <template #heading>
+      <a
+        href="https://vueuse.org/core/useclipboard/#useclipboard"
+        target="_blank"
+      >
+        useClipboard
+      </a>
+    </template>
 
-    This project is served and bundled with
+    <UseClipboard />
   </FunctionItem>
   <FunctionItem>
     <template #heading>Ecosystem</template>

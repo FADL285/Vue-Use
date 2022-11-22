@@ -60,7 +60,7 @@ h3 {
     position: absolute;
     left: 0;
     bottom: calc(50% + 25px);
-    height: calc(50% - 25px);
+    height: 100%;
   }
 
   .item:after {
@@ -69,7 +69,7 @@ h3 {
     position: absolute;
     left: 0;
     top: calc(50% + 25px);
-    height: calc(50% - 25px);
+    height: 100%;
   }
 
   .item:first-of-type:before {

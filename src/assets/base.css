@@ -73,6 +73,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-input {
+label + input {
+  margin-inline: 1rem;
+}
+
+input + button {
   margin-inline: 1rem;
 }
