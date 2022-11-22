@@ -2,6 +2,7 @@
 import FunctionItem from "./FunctionItem.vue";
 import UseTitle from "./functions/UseTitle.vue";
 import UseClipboard from "./functions/UseClipboard.vue";
+import UseDark from "./functions/UseDark.vue";
 </script>
 
 <template>
@@ -28,8 +29,16 @@ import UseClipboard from "./functions/UseClipboard.vue";
     <UseClipboard />
   </FunctionItem>
   <FunctionItem>
-    <template #heading>Ecosystem</template>
+    <template #heading>
+      <a href="https://vueuse.org/core/usedark/#usedark" target="_blank">
+        useDark
+      </a>
+      &
+      <a href="https://vueuse.org/shared/usetoggle/#usetoggle" target="_blank">
+        useToggle
+      </a>
+    </template>
 
-    Get official tools and libraries for your project:
+    <UseDark />
   </FunctionItem>
 </template>
