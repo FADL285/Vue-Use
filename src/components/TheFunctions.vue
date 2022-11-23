@@ -6,6 +6,7 @@ import UseDark from "./functions/UseDark.vue";
 import UseColorMode from "./functions/UseColorMode.vue";
 import OnKeyStroke from "./functions/OnKeyStroke.vue";
 import UseMagicKeys from "./functions/UseMagicKeys.vue";
+import UseOnline from "./functions/UseOnline.vue";
 </script>
 
 <template>
@@ -78,5 +79,14 @@ import UseMagicKeys from "./functions/UseMagicKeys.vue";
     </template>
 
     <UseMagicKeys />
+  </FunctionItem>
+  <FunctionItem>
+    <template #heading>
+      <a href="https://vueuse.org/core/useBattery/#useBattery" target="_blank">
+        useBattery
+      </a>
+    </template>
+
+    <UseOnline />
   </FunctionItem>
 </template>
