@@ -5,6 +5,7 @@ import UseClipboard from "./functions/UseClipboard.vue";
 import UseDark from "./functions/UseDark.vue";
 import UseColorMode from "./functions/UseColorMode.vue";
 import OnKeyStroke from "./functions/OnKeyStroke.vue";
+import UseMagicKeys from "./functions/UseMagicKeys.vue";
 </script>
 
 <template>
@@ -65,5 +66,17 @@ import OnKeyStroke from "./functions/OnKeyStroke.vue";
     </template>
 
     <OnKeyStroke />
+  </FunctionItem>
+  <FunctionItem>
+    <template #heading>
+      <a
+        href="https://vueuse.org/core/useMagicKeys/#useMagicKeys"
+        target="_blank"
+      >
+        useMagicKeys
+      </a>
+    </template>
+
+    <UseMagicKeys />
   </FunctionItem>
 </template>
