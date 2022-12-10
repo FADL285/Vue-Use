@@ -15,7 +15,7 @@ whenever(ctrl_shift_f, (pressed) => {
 <style>
 kbd {
   padding: 0.25rem;
-  background: rgba(1, 1, 1, 0.4);
+  background: rgb(1 1 1 / 15%);
   border-radius: 0.25rem;
 }
 </style>
