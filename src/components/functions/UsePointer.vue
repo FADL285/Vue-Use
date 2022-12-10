@@ -9,7 +9,7 @@ watch(pointer, () => {
   if (pointer.pressure === 0) return;
   const ctx = canvas.value.getContext("2d");
   ctx.fillStyle = "#00bd7e";
-  ctx.fillRect(pointer.x - 35, pointer.y, 10, 10);
+  ctx.fillRect(pointer.x - 100, pointer.y - 100, 10, 10);
 });
 onMounted(() => {
   canvas.value.width = 1200;
