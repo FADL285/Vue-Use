@@ -11,6 +11,7 @@ import UseGeolocation from "./functions/UseGeolocation.vue";
 import UsePageLeave from "./functions/UsePageLeave.vue";
 import UsePointer from "./functions/UsePointer.vue";
 import UseScroll from "./functions/UseScroll.vue";
+import UseInfiniteScroll from "./functions/UseInfiniteScroll.vue";
 </script>
 
 <template>
@@ -134,5 +135,14 @@ import UseScroll from "./functions/UseScroll.vue";
     </template>
 
     <UseScroll />
+  </FunctionItem>
+  <FunctionItem>
+    <template #heading>
+      <a href="https://vueuse.org/core/useinfinitescroll/" target="_blank">
+        UseInfiniteScroll
+      </a>
+    </template>
+
+    <UseInfiniteScroll />
   </FunctionItem>
 </template>
