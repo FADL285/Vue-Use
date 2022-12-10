@@ -10,6 +10,7 @@ import UseOnline from "./functions/UseOnline.vue";
 import UseGeolocation from "./functions/UseGeolocation.vue";
 import UsePageLeave from "./functions/UsePageLeave.vue";
 import UsePointer from "./functions/UsePointer.vue";
+import UseScroll from "./functions/UseScroll.vue";
 </script>
 
 <template>
@@ -124,5 +125,14 @@ import UsePointer from "./functions/UsePointer.vue";
     </template>
 
     <UsePointer />
+  </FunctionItem>
+  <FunctionItem>
+    <template #heading>
+      <a href="https://vueuse.org/core/usescroll/" target="_blank">
+        UseScroll
+      </a>
+    </template>
+
+    <UseScroll />
   </FunctionItem>
 </template>
