@@ -12,6 +12,7 @@ import UsePageLeave from "./functions/UsePageLeave.vue";
 import UsePointer from "./functions/UsePointer.vue";
 import UseScroll from "./functions/UseScroll.vue";
 import UseInfiniteScroll from "./functions/UseInfiniteScroll.vue";
+import UseDisplayMedia from "./functions/UseDisplayMedia.vue";
 </script>
 
 <template>
@@ -144,5 +145,14 @@ import UseInfiniteScroll from "./functions/UseInfiniteScroll.vue";
     </template>
 
     <UseInfiniteScroll />
+  </FunctionItem>
+  <FunctionItem>
+    <template #heading>
+      <a href="https://vueuse.org/core/usedisplaymedia/" target="_blank">
+        useDisplayMedia
+      </a>
+    </template>
+
+    <UseDisplayMedia />
   </FunctionItem>
 </template>
