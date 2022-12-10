@@ -50,6 +50,14 @@
   --color-text: var(--vt-c-text-dark-2);
 }
 
+::-webkit-scrollbar {
+  width: 0.25rem;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(183, 195, 183, 0.50);
+  border-radius: 0.25rem;
+}
+
 *,
 *::before,
 *::after {
