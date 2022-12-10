@@ -65,8 +65,9 @@ body {
   background: var(--color-background);
   transition: color 0.2s, background-color 0.2s;
   line-height: 1.6;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
   font-size: 15px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -79,4 +80,8 @@ label + input {
 
 input + button {
   margin-inline: 1rem;
+}
+
+.lg-p {
+  font-size: 1.25rem;
 }

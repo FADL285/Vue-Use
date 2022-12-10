@@ -8,6 +8,7 @@ import OnKeyStroke from "./functions/OnKeyStroke.vue";
 import UseMagicKeys from "./functions/UseMagicKeys.vue";
 import UseOnline from "./functions/UseOnline.vue";
 import UseGeolocation from "./functions/UseGeolocation.vue";
+import usePageLeave from "./functions/usePageLeave.vue";
 </script>
 
 <template>
@@ -101,5 +102,17 @@ import UseGeolocation from "./functions/UseGeolocation.vue";
     </template>
 
     <UseGeolocation />
+  </FunctionItem>
+  <FunctionItem>
+    <template #heading>
+      <a
+        href="https://vueuse.org/core/usepageleave/#usepageleave"
+        target="_blank"
+      >
+        usePageLeave
+      </a>
+    </template>
+
+    <usePageLeave />
   </FunctionItem>
 </template>
