@@ -37,7 +37,7 @@ h3 {
   color: var(--color-heading);
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1800px) {
   .item {
     margin-top: 0;
     padding: 0.4rem 0 1rem calc(var(--section-gap) / 2);

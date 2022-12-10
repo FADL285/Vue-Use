@@ -33,7 +33,7 @@ header {
   margin: 0 auto 2rem;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1800px) {
   header {
     display: flex;
     place-items: center;

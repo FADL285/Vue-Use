@@ -34,7 +34,7 @@ h3 {
   text-align: center;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1800px) {
   .greetings h1,
   .greetings h3 {
     text-align: left;

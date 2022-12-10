@@ -12,7 +12,7 @@ watch(pointer, () => {
   ctx.fillRect(pointer.x - 35, pointer.y, 10, 10);
 });
 onMounted(() => {
-  canvas.value.width = 1000;
+  canvas.value.width = 1200;
   canvas.value.height = 850;
 });
 </script>
