@@ -7,6 +7,7 @@ import UseColorMode from "./functions/UseColorMode.vue";
 import OnKeyStroke from "./functions/OnKeyStroke.vue";
 import UseMagicKeys from "./functions/UseMagicKeys.vue";
 import UseOnline from "./functions/UseOnline.vue";
+import UseGeolocation from "./functions/UseGeolocation.vue";
 </script>
 
 <template>
@@ -88,5 +89,17 @@ import UseOnline from "./functions/UseOnline.vue";
     </template>
 
     <UseOnline />
+  </FunctionItem>
+  <FunctionItem>
+    <template #heading>
+      <a
+        href="https://vueuse.org/core/usegeolocation/#usegeolocation"
+        target="_blank"
+      >
+        useGeolocation
+      </a>
+    </template>
+
+    <UseGeolocation />
   </FunctionItem>
 </template>
