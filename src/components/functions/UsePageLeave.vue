@@ -1,7 +1,26 @@
 <script setup>
-import { usePageLeave } from "@vueuse/core";
+import { watch } from "vue";
+import { usePageLeave, whenever } from "@vueuse/core";
 
 const isLeft = usePageLeave();
+
+// ! Watch will fire when the value changes....
+watch(isLeft, (value) => {
+  console.log("isLeft", value);
+});
+
+// ! If i want to fire the watch when the value changes to true, i can use the following: "whenever" from vueuse
+/*
+whenever(isLeft, () => {
+  alert("Are you sure you want to leave?");
+});
+*/
+
+// ! Improve user experience by ask for confirmation before leaving the page for one time
+const unwatch = whenever(isLeft, () => {
+  alert("Are you sure you want to leave?");
+  unwatch();
+});
 </script>
 
 <template>
