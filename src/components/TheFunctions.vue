@@ -13,6 +13,7 @@ import UsePointer from "./functions/UsePointer.vue";
 import UseScroll from "./functions/UseScroll.vue";
 import UseInfiniteScroll from "./functions/UseInfiniteScroll.vue";
 import UseDisplayMedia from "./functions/UseDisplayMedia.vue";
+import UseInterval from "./functions/UseInterval.vue";
 </script>
 
 <template>
@@ -154,5 +155,14 @@ import UseDisplayMedia from "./functions/UseDisplayMedia.vue";
     </template>
 
     <UseDisplayMedia />
+  </FunctionItem>
+  <FunctionItem>
+    <template #heading>
+      <a href="https://vueuse.org/shared/useinterval" target="_blank">
+        useInterval
+      </a>
+    </template>
+
+    <UseInterval />
   </FunctionItem>
 </template>
