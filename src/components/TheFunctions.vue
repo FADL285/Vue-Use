@@ -14,6 +14,7 @@ import UseScroll from "./functions/UseScroll.vue";
 import UseInfiniteScroll from "./functions/UseInfiniteScroll.vue";
 import UseDisplayMedia from "./functions/UseDisplayMedia.vue";
 import UseInterval from "./functions/UseInterval.vue";
+import UseIntervalFn from "./functions/UseIntervalFn.vue";
 </script>
 
 <template>
@@ -164,5 +165,14 @@ import UseInterval from "./functions/UseInterval.vue";
     </template>
 
     <UseInterval />
+  </FunctionItem>
+  <FunctionItem>
+    <template #heading>
+      <a href="https://vueuse.org/shared/useintervalfn" target="_blank">
+        useIntervalFn
+      </a>
+    </template>
+
+    <UseIntervalFn />
   </FunctionItem>
 </template>
