@@ -15,6 +15,7 @@ import UseInfiniteScroll from "./functions/UseInfiniteScroll.vue";
 import UseDisplayMedia from "./functions/UseDisplayMedia.vue";
 import UseInterval from "./functions/UseInterval.vue";
 import UseIntervalFn from "./functions/UseIntervalFn.vue";
+import UseNow from "./functions/UseNow.vue";
 </script>
 
 <template>
@@ -174,5 +175,14 @@ import UseIntervalFn from "./functions/UseIntervalFn.vue";
     </template>
 
     <UseIntervalFn />
+  </FunctionItem>
+  <FunctionItem>
+    <template #heading>
+      <a href="https://vueuse.org/core/usenow/" target="_blank">
+        useNow & useDateFormat
+      </a>
+    </template>
+
+    <UseNow />
   </FunctionItem>
 </template>
