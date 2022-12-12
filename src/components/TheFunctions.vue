@@ -18,6 +18,7 @@ import UseIntervalFn from "./functions/UseIntervalFn.vue";
 import UseNow from "./functions/UseNow.vue";
 import UseRefHistory from "./functions/UseRefHistory.vue";
 import UseFetch from "./functions/UseFetch.vue";
+import RefAutoReset from "./functions/RefAutoReset.vue";
 </script>
 
 <template>
@@ -202,5 +203,14 @@ import UseFetch from "./functions/UseFetch.vue";
     </template>
 
     <UseFetch />
+  </FunctionItem>
+  <FunctionItem>
+    <template #heading>
+      <a href="https://vueuse.org/shared/refautoreset" target="_blank">
+        refAutoReset
+      </a>
+    </template>
+
+    <RefAutoReset />
   </FunctionItem>
 </template>
