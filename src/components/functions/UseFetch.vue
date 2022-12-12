@@ -2,14 +2,21 @@
 import { useFetch } from "@vueuse/core";
 import { ref } from "vue";
 
-const url = ref("https://dummyjson.com/products?limit=5");
+const url = ref("https://dummyjson.com/users/add");
 
 const { data, error, isFinished, isFetching, statusCode } = useFetch(url, {
-  afterFetch({ data, response }) {
-    console.log(data, response);
-
-    return { data, response };
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
   },
+  body: JSON.stringify({
+    firstName: "Mohamed",
+    lastName: "Fadl",
+    age: 22,
+    username: "fadl285",
+    email: "mohamedfadl@mail.com",
+    password: "2852000",
+  }),
 }).json();
 </script>
 
@@ -19,7 +26,7 @@ const { data, error, isFinished, isFetching, statusCode } = useFetch(url, {
     <p class="loading" v-if="isFetching">Loading...</p>
     <div v-if="isFinished && !error">
       <p>Status code: {{ statusCode }}</p>
-      <pre>{{ data }}</pre>
+      <pre lang="json">{{ data }}</pre>
     </div>
   </div>
 </template>
