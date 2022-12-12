@@ -20,6 +20,7 @@ import UseRefHistory from "./functions/UseRefHistory.vue";
 import UseFetch from "./functions/UseFetch.vue";
 import RefAutoReset from "./functions/RefAutoReset.vue";
 import UseBase from "./functions/UseBase.vue";
+import UseCycleList from "./functions/UseCycleList.vue";
 </script>
 
 <template>
@@ -222,5 +223,14 @@ import UseBase from "./functions/UseBase.vue";
     </template>
 
     <UseBase />
+  </FunctionItem>
+  <FunctionItem>
+    <template #heading>
+      <a href="https://vueuse.org/core/usecyclelist/" target="_blank">
+        useCycleList
+      </a>
+    </template>
+
+    <UseCycleList />
   </FunctionItem>
 </template>
