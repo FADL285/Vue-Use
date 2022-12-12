@@ -16,6 +16,7 @@ import UseDisplayMedia from "./functions/UseDisplayMedia.vue";
 import UseInterval from "./functions/UseInterval.vue";
 import UseIntervalFn from "./functions/UseIntervalFn.vue";
 import UseNow from "./functions/UseNow.vue";
+import UseRefHistory from "./functions/UseRefHistory.vue";
 </script>
 
 <template>
@@ -184,5 +185,14 @@ import UseNow from "./functions/UseNow.vue";
     </template>
 
     <UseNow />
+  </FunctionItem>
+  <FunctionItem>
+    <template #heading>
+      <a href="https://vueuse.org/core/userefhistory/" target="_blank">
+        useRefHistory & useDebounceRefHistory
+      </a>
+    </template>
+
+    <UseRefHistory />
   </FunctionItem>
 </template>
