@@ -19,6 +19,7 @@ import UseNow from "./functions/UseNow.vue";
 import UseRefHistory from "./functions/UseRefHistory.vue";
 import UseFetch from "./functions/UseFetch.vue";
 import RefAutoReset from "./functions/RefAutoReset.vue";
+import UseBase from "./functions/UseBase.vue";
 </script>
 
 <template>
@@ -212,5 +213,14 @@ import RefAutoReset from "./functions/RefAutoReset.vue";
     </template>
 
     <RefAutoReset />
+  </FunctionItem>
+  <FunctionItem>
+    <template #heading>
+      <a href="https://vueuse.org/core/usebase64/" target="_blank">
+        useBase64
+      </a>
+    </template>
+
+    <UseBase />
   </FunctionItem>
 </template>
