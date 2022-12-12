@@ -17,6 +17,7 @@ import UseInterval from "./functions/UseInterval.vue";
 import UseIntervalFn from "./functions/UseIntervalFn.vue";
 import UseNow from "./functions/UseNow.vue";
 import UseRefHistory from "./functions/UseRefHistory.vue";
+import UseFetch from "./functions/UseFetch.vue";
 </script>
 
 <template>
@@ -194,5 +195,12 @@ import UseRefHistory from "./functions/UseRefHistory.vue";
     </template>
 
     <UseRefHistory />
+  </FunctionItem>
+  <FunctionItem>
+    <template #heading>
+      <a href="https://vueuse.org/core/usefetch" target="_blank"> useFetch </a>
+    </template>
+
+    <UseFetch />
   </FunctionItem>
 </template>
